@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-weight: 800; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos específicos para o cabeçalho */
+header {
+    background-color: #FEDE00; /* Amarelo */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos para o conteúdo */
+main {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.title1{
+margin-bottom: 5%;
+color: #000; 
+background-color: #FFD700; 
+padding: 10px 10px; 
+border-radius: 10px; 
+max-width: 50%;
+margin: 0 auto; 
+}
+
+.title2{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    color: #000; 
+    background-color:#EC1B23; 
+    padding: 10px 10px; 
+    border-radius: 10px; 
+    max-width: 40%;
+    margin: 0 auto; 
+    font-size:25px;
+    }
+    
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.marcamovimento{
+    max-width: 30%;
+    height: auto;
+}
+
+.frasemovimento{
+    max-width: 50%;
+    height: auto;
+    animation: pulse 2s infinite alternate; /* Aplicando a animação "pulse" */
+    transform-origin: center; /* Definindo o ponto de origem da transformação */
+}
+
+/* Definindo a animação "pulse" */
+@keyframes pulse {
+    0% { transform: scale(1); } /* Início da animação */
+    50% { transform: scale(1.1); } /* Meio da animação - aumenta o tamanho */
+    100% { transform: scale(1); } /* Fim da animação - retorna ao tamanho original */
+}
+
+.button {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: inline-block;
+    background-color:#EC1B23; /* Vermelho */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #DC143C; /* Tom mais escuro de vermelho */
+}
+
+footer {
+    background-color: #1F1E6A; /* Vermelho */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: fixed; /* Define a posição fixa */
+}
+/* Estilos específicos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  .marcamovimento{
+    max-width: 60%;
+  }
+    .container {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  
+    .container {
+        padding: 5px;
+    }
+}
+
+/* Estilos responsivos para telas menores que 768px (tablet) */
+@media only screen and (max-width: 768px) {
+    .title1 {
+        max-width: 70%; /* Reduz a largura máxima */
+        font-size: 20px; /* Diminui o tamanho da fonte */
+        margin-bottom: 15%;
+    }
+
+    .title2 {
+        max-width: 60%; /* Reduz a largura máxima */
+        font-size: 20px; /* Diminui o tamanho da fonte */
+        margin-bottom: 10%;
+        margin-top: 15%;
+    }
+}
+
+/* Estilos responsivos para telas menores que 480px (celular) */
+@media only screen and (max-width: 480px) {
+    .title1,
+    .title2 {
+        max-width: 80%; 
+        font-size: 18px;
+        margin-bottom: 10%;
+        margin-top: 15%;
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+}

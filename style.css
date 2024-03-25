@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@800&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
@@ -24,139 +21,127 @@ body {
     padding: 20px;
 }
 
-/* Estilos específicos para o cabeçalho */
 header {
-    background-color: #FEDE00; /* Amarelo */
+    background-color: #FEDE00;
     padding: 20px;
     text-align: center;
 }
 
-/* Estilos específicos para o conteúdo */
 main {
     margin-top: 30px;
     padding: 20px;
     text-align: center;
 }
 
-.title1{
-margin-bottom: 5%;
-color: #000; 
-background-color: #FFD700; 
-padding: 10px 10px; 
-border-radius: 10px; 
-max-width: 50%;
-margin: 0 auto; 
+.title1 {
+    margin-bottom: 5vw; 
+    color: #fff; 
+    background-color: #EC1B23; 
+    padding: 1vw 1vw; 
+    border-radius: 10px; 
+    font-size: 4vw; 
+    max-width: 50%; 
+    margin: 0 auto; 
 }
 
-.title2{
-    margin-top: 2%;
-    margin-bottom: 5%;
+.title2 {
     color: #000; 
-    background-color:#EC1B23; 
-    padding: 10px 10px; 
+    background-color: #FEDE00; 
+    padding: 1vw 1vw; 
     border-radius: 10px; 
-    max-width: 40%;
+    font-size: 4vw; 
+    max-width: 56%; 
     margin: 0 auto; 
-    font-size:25px;
-    }
-    
+    margin-bottom: 5vw; 
+}
 
+.title3 {
+    color: #fff; 
+    background-color: #EC1B23; 
+    padding: 1vw 1vw; 
+    border-radius: 10px; 
+    font-size: 4vw; 
+    max-width: 30%; 
+    margin: 0 auto; 
+    margin-bottom: 5vw; 
+}
 
 img {
     max-width: 100%;
     height: auto;
 }
 
-.marcamovimento{
-    max-width: 30%;
+.marcamovimento {
+    max-width: 15%; 
     height: auto;
 }
 
-.frasemovimento{
-    max-width: 50%;
+.frasemovimento {
+    max-width: 40%; 
     height: auto;
-    animation: pulse 2s infinite alternate; /* Aplicando a animação "pulse" */
-    transform-origin: center; /* Definindo o ponto de origem da transformação */
+    animation: pulse 2s infinite alternate;
+    transform-origin: center;
 }
 
-/* Definindo a animação "pulse" */
 @keyframes pulse {
-    0% { transform: scale(1); } /* Início da animação */
-    50% { transform: scale(1.1); } /* Meio da animação - aumenta o tamanho */
-    100% { transform: scale(1); } /* Fim da animação - retorna ao tamanho original */
+    0% { transform: scale(1); } 
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); } 
 }
-
 .button {
-    margin-top: 5%;
-    margin-bottom: 5%;
     display: inline-block;
-    background-color:#EC1B23; /* Vermelho */
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #FEDE00;
+    color: #000;
+    padding: 1vw 2vw; 
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-size: 3vw; 
+    margin-bottom: 5%;
 }
 
 .button:hover {
-    background-color: #DC143C; /* Tom mais escuro de vermelho */
+    background-color: #DC143C;
+    color: #fff
 }
 
 footer {
-    background-color: #1F1E6A; /* Vermelho */
+    background-color: #1F1E6A;
     color: #fff;
     padding: 10px 0;
     text-align: center;
     width: 100%;
     bottom: 0;
-    position: fixed; /* Define a posição fixa */
-}
-/* Estilos específicos para dispositivos móveis */
-@media only screen and (max-width: 768px) {
-  .marcamovimento{
-    max-width: 60%;
-  }
-    .container {
-        padding: 10px;
-    }
+    position: fixed;
+    font-size: 1vw;
 }
 
-@media only screen and (max-width: 480px) {
-  
-    .container {
-        padding: 5px;
-    }
-}
-
-/* Estilos responsivos para telas menores que 768px (tablet) */
+/* Estilos responsivos */
 @media only screen and (max-width: 768px) {
+    .marcamovimento {
+        max-width: 50%; 
+
+    .frasemovimento {
+        max-width: 50%; 
+    }
+
+
     .title1 {
-        max-width: 70%; /* Reduz a largura máxima */
-        font-size: 20px; /* Diminui o tamanho da fonte */
-        margin-bottom: 15%;
+        font-size: 5vw; 
+        max-width: 70%; 
+        margin-bottom: 5vw; 
     }
 
     .title2 {
-        max-width: 60%; /* Reduz a largura máxima */
-        font-size: 20px; /* Diminui o tamanho da fonte */
-        margin-bottom: 10%;
-        margin-top: 15%;
+        font-size: 4vw; 
+        max-width: 60%; 
+        margin-bottom: 5vw; 
     }
+    .title3 {
+        font-size: 4vw;
+        max-width: 40%; 
+        margin-bottom: 5vw; 
+    }
+
 }
-
-/* Estilos responsivos para telas menores que 480px (celular) */
-@media only screen and (max-width: 480px) {
-    .title1,
-    .title2 {
-        max-width: 80%; 
-        font-size: 18px;
-        margin-bottom: 10%;
-        margin-top: 15%;
-    }
-
-    footer {
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-    }
 }

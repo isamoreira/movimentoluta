@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+
+header {
+    background-color: #FEDE00;
+    box-shadow: 0px 3px 10px #FEDE00;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 20%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: black;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+  .nav-bar {
+      padding: 1.5rem 4rem;
+  }
+  .nav-item {
+      display: none;
+  }
+ 
+  .mobile-menu-icon {
+      display: block;
+  }
+  .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+  .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+  }
+
+  .open {
+      display: block;
+  }
+
+  .logo img {
+      max-width: 40%;
+  }
+}
+
+
+
+.form {
+  flex: 1;  
+  padding-right: 50px;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  margin-top: 10%;
+  
+}
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+  }
+
+  p{
+    text-align: justify;
+  }
+  
+  .content {
+    flex: 1 1 20%; /* ocupa 45% da largura do contêiner */
+    display: flex;
+    flex-direction: column; /* Para empilhar o conteúdo verticalmente */
+    align-items: center; /* Para centralizar verticalmente */
+    margin-top: 5%;
+  }
+  
+
+
+.quem-somos {
+    color: #000; 
+    padding: 50px 0;
+    background-image: url('/img/bg-quemsomos.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .frases{
+    max-width: 70%;
+  }
+
+  .frases1{
+    max-width: 70%;
+    margin-top: 7%;
+  }
+
+
+  .texto {
+    flex: 1 1 100%; /* Ocupa toda a largura em telas pequenas */
+    margin-bottom: 20px; 
+  }
+  .queremos {
+    font-size: larger; /* Altere o valor conforme necessário */
+  }
+
+  .imagens {
+    flex: 1 1 100%; /* Ocupa toda a largura em telas pequenas */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+  
+  .imagens img {
+    width: 45%;
+  }
+
+  .txt-campanha{
+    max-width: 80%;
+    margin-top: 5%;
+    font-size: large;
+  }
+  
+  .manifesto {
+    flex: 1 1 100%; /* Ocupa toda a largura em telas pequenas */
+  }
+  
+  .manifesto h3 {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .content,
+    .form {
+      flex: 1 1 100%; 
+      margin-right: 0; 
+      margin-bottom: 20px; 
+      padding:0;
+    }
+   
+  }
+  /* Media query para telas menores */
+  @media only screen and (min-width: 768px) {
+    .texto,
+    .imagens,
+    .manifesto {
+      flex: 1 1 30%; /* Cada item ocupa 30% da largura em telas maiores */
+    }
+  
+    .texto {
+      margin-right: 20px; /* Espaçamento entre texto e imagens */
+    }
+  
+    .imagens img {
+      width: 100%; /* As imagens ocupam toda a largura do contêiner */
+    }
+  
+  }
+    
+ 

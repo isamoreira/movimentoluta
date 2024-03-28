@@ -1,30 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site do Movimento Social</title>
     <link rel="stylesheet" href="style.css">
+    <title>Luta Movimento</title>
+    <link rel="icon" href="./img/movimento.png">
 </head>
+
 <body>
     <header>
-        <!-- Aqui podemos colocar a marca do movimento -->
-        <img class="marcamovimento" src="movimento.png" alt="Marca do Movimento">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="./img/movimento.png" alt="Logo do Movimento Luta">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#campanha" class="nav-link">Campanha ENEL</a></li>
+                    <li class="nav-item"><a href="#quemsomos" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./icones/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#campanha" class="nav-link">Campanha ENEL</a></li>
+                <li class="nav-item"><a href="#quemsomos" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+
+        </div>
     </header>
-    <main>
-        <h1 class="title1">CHEGA DE DESCASO!</h1>
-        <img class="frasemovimento" src="frasemovimento.png"Frase do Movimento">
-        <!-- Texto explicativo -->
-        <h2 class="title2">Pelo fim da concessão!</h2>
-        <h3 class="title3">Fora Enel!</h3>
-        <!-- Botão para o formulário -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScw31Bwi2YyR4FcnehGFyR2wrmfJzdzY7CAasNLBgKLPhHHog/viewform" class="button">Assinar</a>
-    </main>
-    <footer>
-        <!-- Aqui podemos adicionar informações adicionais ou links importantes -->
-        <p>&copy; 2024 Movimento Luta. Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+    <div class="container" id="campanha">
+        <div class="content">
+          <h1 class="highlight">FORA ENEL! NÃO AGUENTAMOS MAIS TANTO DESCASO!</h1>
+          
+          <p>A população de Niterói não aguenta mais tanto descaso! A tarifa da ENEL RJ é a segunda mais cara do país, mas o serviço prestado não atende os padrões mínimos de qualidade. Os apagões se estendem por horas e até mesmo por dias. As perdas materiais com as quedas de energias são enormes. Pessoas que necessitam de energia para a manutenção dos seus aparelhos vitais estão tendo seus direitos violados. A manutenção das redes elétricas são escassas.</p>
+          <h2 class="highlight">CHEGA DE DESCASO!</h2>
+          <p><strong>O QUE QUEREMOS:</strong></p>
+          <ul>
+            <li>Fim da concessão da ENEL e reestatização da distribuição de energia no Brasil</li>
+            <li>Modernização da rede com substituição dos fios aéreos por fios subterrâneos</li>
+            <li>Readequação da rede de acordo com o crescimento urbano para que não haja sobrecargas</li>
+            <li>Colocação de novos transformadores suprindo as necessidades da cidade de Niterói</li>
+            <li>Melhoria da manutenção das redes elétricas</li>
+            <li>Efetivação de uma ouvidoria de emergência para avaliação e atendimento de casos críticos e de alto risco (pessoas com deficiência, doenças crônicas, idosos e acamados) para restabelecimento da energia ou envio urgente de geradores de energia</li>
+          </ul>
+        </div>
+          <div class="form">
+            <iframe src="https://fm.addxt.com/form/?vf=1FAIpQLScw31Bwi2YyR4FcnehGFyR2wrmfJzdzY7CAasNLBgKLPhHHog" width="1080" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+        </div>
+    </div>
+
+    <section class="quem-somos">
+        <div class="container">
+          <div class="texto">
+            <h2>Quem Somos</h2>
+            <p>O Movimento Luta é um movimento social, organizado por meio de núcleos comunitários e de juventude na cidade de Niterói, que luta por justiça social e combate às desigualdades e opressões que estruturam a nossa sociedade. Por Comida na Mesa, Moradia Digna, Democratização do Acesso à Cultura e ao Esporte, Educação Pública Gratuita de Qualidade para o povo. “É Na Luta Que A Gente Se Encontra”</p>
+          </div>
+          <div class="imagens">
+            <img src="./img/imagem1.jpg" alt="Imagem 1">
+            <img src="./img/imagem2.jpg" alt="Imagem 2">
+          </div>
+          <div class="manifesto">
+            <h3>Manifesto de Fundação do Movimento Luta</h3>
+            <p>Somos herdeiros de Tereza de Benguela, Malcon X, Mohamad Ali, Zumbi dos Palmares, Dandara e Carolina Maria de Jesus, negros e negras que se levantaram e arrebentaram as correntes.</p>
+            <p>Somos os povos indígenas e originários Tupinambás, Yanomamis, Pataxós e Guarani que lutam bravamente pela Vida e para proteger a nossa biodiversidade.</p>
+            <p>Somos as mulheres que são linhas de frente da revolução, guerreiras que se organizam e lutam contra todas as formas de opressões.</p>
+            <p>Somos as Favelas e Periferias, das famílias resistências, da cultura popular e dos quilombos urbanos.</p>
+            <p>Somos as cores da bandeira LGBTQIA+ na sua liberdade de ser e de amar.</p>
+            <p>E trazemos na fé e na liberdade religiosa nossa esperança de um futuro melhor.</p>
+            <p>Surgimos da sede de transformação e construção de um mundo justo e igualitário para todos, todas e todes.</p>
+            <p>Entre becos e vielas em um único tom ecoa: QUEM LUTA, MOVIMENTA! ⭐</p>
+            <p>Movimento Luta, Janeiro de 2023, Niterói/RJ</p>
+          </div>
+          <div class="imagens">
+            <img src="./img/imagem1.jpg" alt="Imagem 1">
+            <img src="./img/imagem2.jpg" alt="Imagem 2">
+          </div>
+        </div>
+    </section>
+       
+
+    <script>
+        function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "./icones/menu_white_36dp.svg";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "./icones/close_white_36dp.svg";
+    }
+}
+    </script>
 </body>
+
 </html>
 

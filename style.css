@@ -7,9 +7,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #EC1B23;
-    
     color: #fff;
+    background-color: #1F1E6A
   }
 
 header {
@@ -196,19 +195,27 @@ section {
   
   .caixa-texto {
     padding: 20px;
-    background-color: #FEDE00;
-    color: black;
+    background-color: #1F1E6A;
+    color: white;
     border-radius: 10px;
     font-size: larger;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1); 
   }
   
   .caixa-texto h2 {
     margin-top: 0;
+    margin-bottom: 15px;
   }
   
   .caixa-imagem {
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1); 
+  }
+
+  .destaque{
+    text-align: center;
+    margin-top: 5px;
   }
   
   .caixa-imagem img {
@@ -230,9 +237,8 @@ section {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
-    color: #000;
     background-image: none;
-    background-color: #EC1B23;
+  
 }
 
 .projeto {
@@ -256,8 +262,6 @@ section {
 
 h1{
 font-size: x-large;
-background-color: #EC1B23;
-color: #000;
 text-align: center;
 padding-top: 20px;
 padding-bottom: 20px;
@@ -270,23 +274,21 @@ padding-bottom: 20px;
 }
 
 .cb-indicadores {
-  background-color: #EC1B23;
+
   text-align: center;
   padding: 20px;
 }
 
 .cb-indicadores h1 {
-  color: black;
   margin: 0;
 }
 
 .wrapper {
-  background-color: #EC1B23;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  color: black;
   padding: 20px;
   margin-bottom: 10px;
 }
@@ -295,10 +297,11 @@ padding-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #FEDE00;
+  background-color: #E81D25;
   border-radius: 10px;
   padding: 10px 20px;
   max-width: 600px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .indicador p {

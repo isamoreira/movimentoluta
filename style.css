@@ -8,13 +8,15 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
-    background-color: #1F1E6A
+
+    
   }
 
 header {
-    background-color:#000;
+  background: rgb(254,238,0);
+  background: linear-gradient(90deg, rgba(254,238,0,1) 0%, rgba(215,198,18,1) 39%, rgba(31,30,106,1) 71%, rgba(232,29,37,1) 100%);
     box-shadow: 0px 3px 10px #FEDE00;
-    color: #fff;
+    color: #000;
 }
 
 .nav-bar {
@@ -120,7 +122,9 @@ header {
   flex: 1 1 30%;
 }
 iframe {
-  max-width: 100%; /* Adiciona uma largura máxima para o iframe */
+  max-width: 100%; 
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .content {

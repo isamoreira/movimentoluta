@@ -355,6 +355,10 @@ transform: scale(1.1);
   margin: 0;
 }
 
+#esquerda{
+  color:  #E81D25;
+}
+
 @media only screen and (max-width: 600px) {
   .indicador {
       max-width: 80%;

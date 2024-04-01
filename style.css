@@ -12,8 +12,9 @@ body {
   }
 
 header {
-    background-color: #FEDE00;
+    background-color:#000;
     box-shadow: 0px 3px 10px #FEDE00;
+    color: #fff;
 }
 
 .nav-bar {
@@ -49,8 +50,8 @@ header {
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: black;
     font-weight: 400;
+    color: #fff;
 }
 
 .login-button button {
@@ -101,92 +102,111 @@ header {
   }
 
   .logo img {
-      max-width: 40%;
+      max-width: 50%;
   }
 }
-
-
-
-.form {
-  flex: 1;  
-  padding-right: 50px;
-}
-
-iframe {
-  width: 100%;
-  border: none;
-  margin-top: 10%;
-  
-}
-
 
 .container1 {
-    display: flex;
-    background-color: #000;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: #000;
+  flex-wrap: wrap;
+  padding:30px;
+  font-size: larger
+}
+
+.form {
+  flex: 1 1 30%;
+}
+iframe {
+  max-width: 100%; /* Adiciona uma largura máxima para o iframe */
+}
+
+.content {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  text-decoration: none;
+}
+
+.content li{
+  list-style-type: none;
+  margin-top: 5%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.frases {
+  max-width: 50%;
+  margin-top: 5%;
+}
+
+.azul{
+  background-color:  #1F1E6A;
+  padding: 3%;
+  border-radius: 10px;
+}
+.amarelo{
+  background-color:  #FEDE00;
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.vermelho{
+  background-color: #E81D25;
+  border-radius: 10px;
+  padding: 3%;
+}
+
+
+.queremos {
+  font-size: xx-large;
+}
+#estilo {
+  color: #fff;
+  font-weight: bold;
+}
+
+.txt-campanha {
+  max-width: 100%;
+  font-size: large;
+  padding-top: 5%;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
 
-  p{
-    text-align: justify;
-  }
-  
+  .form,
   .content {
-    flex: 1 1 20%; /* ocupa 45% da largura do contêiner */
-    display: flex;
-    flex-direction: column; /* Para empilhar o conteúdo verticalmente */
-    align-items: center; /* Para centralizar verticalmente */
-    margin-top: 5%;
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0;
   }
-  
+  .content{
+    max-width: 90%;
+  }
+
+  iframe {
+    max-width: 90%; /* Adiciona uma largura máxima para o iframe */
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
   .frases{
-    max-width: 70%;
-    animation: pulse 3s infinite alternate; /* Use a animação pulse */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* Escala normal */
-  }
-  100% {
-    transform: scale(1.1); /* Escala 10% maior */
+    max-width: 100%;
   }
 }
 
-  .frases1{
-    max-width: 60%;
-    margin-top: 7%;
-    animation: pulse 2s infinite alternate;
-  }
-
-
-
-
-  .queremos {
-    font-size: larger; /* Altere o valor conforme necessário */
-  }
-
-
-  .txt-campanha{
-    max-width: 80%;
-    margin-top: 5%;
-    font-size: large;
-  }
-  
-  @media screen and (max-width: 767px) {
-    .container1 {
-      flex-direction: column; 
-      align-items: center; 
-    }
-  
-    .content,
-    .form {
-      flex: 1 1 100%; 
-      margin-right: 0; 
-      margin-bottom: 20px; 
-      padding:0;
-    }
-   
-  }
 
   
 section {
@@ -293,17 +313,12 @@ padding-bottom: 20px;
 }
 
 .cb-indicadores {
-
   text-align: center;
-  padding: 20px;
+  background-color: #E81D25;
 }
 
-.cb-indicadores h1 {
-  margin: 0;
-}
 
 .wrapper {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,13 +331,20 @@ padding-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #E81D25;
-  border-radius: 10px;
-  padding: 10px 20px;
-  max-width: 650px;
+  background-color: white;
+  font-size: large;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
   display: inline-block;
   transition: transform 0.3s ease-in-out;
+  color: #1F1E6A;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+}
+
+.indicador img{
+  margin: 0%;
+  border-radius: 10px;
 }
 
 .indicador:hover {
@@ -335,13 +357,17 @@ transform: scale(1.1);
 
 @media only screen and (max-width: 600px) {
   .indicador {
-      max-width: 100%;
+      max-width: 80%;
   }
+}
+
+#esquerda{
+text-align: right;
 }
 
 
 .footer {
-  background-color: #FEDE00;
+  background-color: white;
   color: #000; 
   padding: 10px 0;
   text-align: center;
@@ -358,7 +384,7 @@ transform: scale(1.1);
 }
 
 .footer-info p {
-  margin: 5px 0;
+  margin: 10px 10px;
 }
 
 .footer-info img {
@@ -373,6 +399,7 @@ transform: scale(1.1);
 
 .footer-logo img {
   max-width: 150px; /* Ajuste conforme necessário */
+  margin-top: -10px;
 }
 
 /* Estilo para os ícones */

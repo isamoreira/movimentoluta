@@ -111,21 +111,72 @@ header {
 
 .container1 {
   display: flex;
-  justify-content: space-between;
+ 
   background-color: white;
   color: #000;
   flex-wrap: wrap;
-  padding:30px;
-  font-size: larger
+  padding: 30px;
+  font-size: larger;
 }
 
-.form {
-  flex: 1 1 30%;
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-iframe {
-  max-width: 100%; 
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+
+#form-container {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin-right: 5%;
+  height: 60%;
+}
+
+.formulario {
+  background-color: #fede00;
+  padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%; 
+}
+
+.campo {
+  width: calc(100% - 22px); /* Calculando a largura com margem de 15px de cada lado */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color:  #fede00;
+}
+
+.whatsapp-label {
+  margin-bottom: 10px;
+}
+
+.whatsapp-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.radio-label {
+  margin-right: 10px;
+}
+
+.botao {
+  background-color: #000000;
+  color: #FFFF00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.botao:hover {
+  background-color: #333333;
 }
 
 .content {
@@ -137,11 +188,10 @@ iframe {
   text-decoration: none;
 }
 
-.content li{
+.content li {
   list-style-type: none;
   margin-top: 5%;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-
 }
 
 .frases {
@@ -149,28 +199,29 @@ iframe {
   margin-top: 5%;
 }
 
-.azul{
-  background-color:  #1F1E6A;
+.azul {
+  background-color: #1f1e6a;
   padding: 3%;
   border-radius: 10px;
-}
-.amarelo{
-  background-color:  #FEDE00;
-  border-radius: 10px;
-  padding: 3%;
-  color:#000
 }
 
-.vermelho{
-  background-color: #E81D25;
+.amarelo {
+  background-color: #fede00;
+  border-radius: 10px;
+  padding: 3%;
+  color: #000;
+}
+
+.vermelho {
+  background-color: #e81d25;
   border-radius: 10px;
   padding: 3%;
 }
-
 
 .queremos {
   font-size: xx-large;
 }
+
 #estilo {
   color: #fff;
   font-weight: bold;
@@ -182,7 +233,14 @@ iframe {
   padding-top: 5%;
 }
 
-
+#mensagem{
+  text-align: center;
+  margin-top: 10%;
+  background-color: #fede00;
+  border-radius: 10px;
+  padding: 3%;
+  margin-left: 10%;
+}
 
 @media screen and (max-width: 767px) {
   .container1 {
@@ -191,27 +249,31 @@ iframe {
     padding: 0;
   }
 
-  .form,
+  .formulario,
   .content {
     flex: 1 1 100%;
     margin-right: 0;
     margin-bottom: 20px;
     padding: 0;
   }
-  .content{
+
+  .formulario{
+    max-width: 90%;
+    padding-left: 5%;
+    margin-top: 10%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+  }
+
+  .content {
     max-width: 90%;
   }
 
-  iframe {
-    max-width: 90%; /* Adiciona uma largura máxima para o iframe */
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-
-  .frases{
+  .frases {
     max-width: 100%;
   }
 }
+
 
 
   
